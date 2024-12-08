@@ -1,0 +1,28 @@
+<div class="login-container">
+    <h2>Iniciar Sesión</h2>
+    <form (submit)="login(usernameInput, passwordInput)" class="login-form">
+      <div>
+        <label for="username">Usuario:</label>
+        <input
+          #usernameInput
+          id="username"
+          type="text"
+          placeholder="Ingresa tu usuario"
+          required
+        />
+      </div>
+      <div>
+        <label for="password">Contraseña:</label>
+        <input
+          #passwordInput
+          id="password"
+          type="password"
+          placeholder="Ingresa tu contraseña"
+          required
+        />
+      </div>
+      <button type="submit">Iniciar Sesión</button>
+    </form>
+  </div>
+  
+  
